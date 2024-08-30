@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCitasMedicas.ReservationPage">
+
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+
+        <Label
+            Text="App De Citas"
+            FontSize="30"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            Margin="0,20,0,20" />
+        
+        <Label
+            Text="Fecha:"
+            SemanticProperties.HeadingLevel="Level2" />
+        <Entry x:Name="DateEntry" Placeholder="Ingrese la fecha" />
+
+        
+        <Label
+            Text="Especialidad:" />
+        <Picker x:Name="SpecialtyPicker">
+            <Picker.Items>
+                <x:String>Cardiología</x:String>
+                <x:String>Dermatología</x:String>
+                <x:String>Pediatría</x:String>
+                <x:String>Neurología</x:String>
+                
+            </Picker.Items>
+        </Picker>
+
+        
+        <Label
+            Text="Médico(a):" />
+        <Picker x:Name="DoctorPicker">
+            <Picker.Items>
+                <x:String>Dr. Jhonatan Gordi</x:String>
+                <x:String>Dra. Christian Yamete</x:String>
+                <x:String>Dr. Jorge Chocolatin</x:String>
+                <x:String>Dra. Melisa Perez</x:String>
+                <x:String>Dra. Julia Diaz</x:String>
+            </Picker.Items>
+        </Picker>
+
+            <Button
+            Text="Confirmar reserva"
+            Clicked="OnConfirmReservationClicked"
+            HorizontalOptions="Fill" />
+
+    </VerticalStackLayout>
+</ContentPage>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppCitasMedicas.Confirmacion">
+
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25">
+
+        <Label
+            Text="App De Citas"
+            FontSize="30"
+            HorizontalOptions="Center"
+            FontAttributes="Bold"
+            Margin="0,20,0,20" />
+
+        <Label
+            Text="Cita Reservada"
+            FontSize="24"
+            HorizontalOptions="Center" />
+
+        <Label
+            x:Name="DateLabel"
+            FontSize="18"
+            HorizontalOptions="Center" />
+
+        <Label
+            x:Name="SpecialtyLabel"
+            FontSize="18"
+            HorizontalOptions="Center" />
+
+        <Label
+            x:Name="DoctorLabel"
+            FontSize="18"
+            HorizontalOptions="Center" />
+
+        
+        <Button
+            Text="Aceptar"
+            Clicked="OnAcceptClicked"
+            HorizontalOptions="Fill"
+            BackgroundColor="Green"
+            TextColor="White"/>
+
+        
+        <Button
+            Text="Cancelar cita"
+            Clicked="OnCancelClicked"
+            HorizontalOptions="Fill"
+            BackgroundColor="Red"
+            TextColor="White"/>
+
+    </VerticalStackLayout>
+</ContentPage>
